@@ -59,7 +59,7 @@ def main():
 				for shot in updatable:
 					if isinstance(shot, Shot):
 						if shot.collision(sprite) == True:
-							sprite.kill()
+							sprite.split()
 							shot.kill()
 			
 
